@@ -1,0 +1,127 @@
+.api-response {
+    height: 80vh;
+    width: 700px;
+    overflow: scroll;
+    margin: auto;
+    /* background: #e8e1e1; */
+}
+
+.main-body {
+    
+ }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inner-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tweet-body {
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 170px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
+    margin-bottom: 0.1rem;
+  }
+
+  .tweet-body:hover {
+    background-color: #F5F8FA;
+    border: #E6ECF0;
+  }
+
+  .picture {
+    margin-left: 24px;
+    margin-top: 12px;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 19px;
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: bolder;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    color:rgb(20, 23, 26);
+  }
+
+  .handle {
+    margin-left: 10px;
+    margin-top: 19px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: -0.6px;
+    color: rgb(101, 119, 134);
+  }
+
+  .tweet {
+    margin-left: 15px;
+    margin-top: 7px;
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    color:rgb(20, 23, 26);
+    text-align: left;
+  }
+.api-response .card {
+    border: 1px solid #fffefe;
+    padding: 16px;
+    background: #f1eeee;
+    margin: 16px 0;
+    width: auto !important;
+}
+
+.tw-buttons {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tw-buttons .img {
+    cursor: pointer;
+    color: rgb(136, 153, 166);
+    width: 18px;
+}
+
+.tw-buttons .icon {
+    cursor: pointer;
+    color: rgb(136, 153, 166);
+    font-size: 18px;
+    max-width: 12px;
+} 
+
+.tw-buttons .count {
+    color: rgb(136, 153, 166);
+    margin: 0;
+    margin-left: 8px;
+}
+
+.material-icons.red {
+   color: #E0235E;
+}
