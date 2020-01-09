@@ -108,10 +108,6 @@ class Dashboard extends React.Component {
                                         <div style= {{display: 'flex', alignItems: 'center'}}>
                                         <i
                                             className='material-icons icon'
-                                            onClick = {()=> {
-                                                    const type = tweet.retweeted ? 'unretweet' : 'retweet'
-                                                    this.retweetAction(tweet.id_str, key, type);
-                                            }}
                                         >
                                             {
                                                 tweet.retweeted ? 'repeat_one' : 'repeated'

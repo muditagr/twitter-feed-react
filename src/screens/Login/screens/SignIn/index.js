@@ -45,6 +45,7 @@ class SignIn extends React.Component {
         const { request_oauth_token: token } = res.data;
         if (token) {
             const callBackUrl = 'https://twitterstream.herokuapp.com/login/signin'
+            // const callBackUrl = 'http://localhost:3000/login/signin';
             window.location.replace(`https://api.twitter.com/oauth/authenticate?oauth_token=${token}&callback_url=${callBackUrl}`);
         };
     }
