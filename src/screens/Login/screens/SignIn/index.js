@@ -26,7 +26,7 @@ class SignIn extends React.Component {
             const token = (res && res.data && res.data.token) ? res.data.token : '';
             const user = (res && res.data && res.data.user) ? res.data.user : '';
             const UID = (res && res.data && res.data.twitter_user_id) ? res.data.twitter_user_id : '';
-            
+
             localStorage.setItem('token',token);
             localStorage.setItem('email',user.email);
             localStorage.setItem('UID', UID);
@@ -44,10 +44,9 @@ class SignIn extends React.Component {
 
         const { request_oauth_token: token } = res.data;
         if (token) {
-            const callBackUrl = apiBaseUrl + '/login/signin'
+            const callBackUrl = 'https://twitterstream.herokuapp.com/login/signin'
             window.location.replace(`https://api.twitter.com/oauth/authenticate?oauth_token=${token}&callback_url=${callBackUrl}`);
         };
-
     }
 
     render() {

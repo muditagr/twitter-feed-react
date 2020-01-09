@@ -98,9 +98,9 @@ class Dashboard extends React.Component {
                                 <img src={tweet.user.profile_image_url_https} alt="Logo" className="picture"></img>
                                 <div>
                                     <div className="inner-body">
-                                        <div className="name">{tweet.user.name}</div>
+                                        <a className="name" href={"https://twitter.com/" + (tweet.user.screen_name)} target="_blank">{tweet.user.name}</a>
                                         <div className="handle">{`@ ${tweet.user.screen_name}`}</div>
-                                        <div>{tweet.created_at}</div>
+                                        {/* <div className="created-at">{tweet.created_at}</div> */}
                                     </div>
                                     <Tweet tweet_text={tweet.text}/>
                                     <div className='tw-buttons'>
